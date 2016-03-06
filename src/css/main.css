@@ -714,7 +714,7 @@ a {
       width: 66.5%; } }
   .project--title, .about__title, .portfolio--title, .contact__title {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 2.6rem; }
