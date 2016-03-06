@@ -1,0 +1,38 @@
+doctype html
+html
+  include ./includes/_head.jade
+  body
+    include ./includes/_svg-sprite.jade
+    include ./includes/_mixins.jade
+
+    include ./includes/_header.jade
+      
+    section.about  
+      p.about__title About Us
+      p.about__txt 
+        |Работа выполнялась для студии Signal Red и заключалась в создании нескольких планов где показывалась атмосфера Парижа XIX века. Первый план это общий вид крыш Парижа и движение камеры которая заканчивалась на виде окна, где мы видим молодого Жюль Верна пишущего за своим столом. Работа выполнялась для студии Signal Red и заключалась в создании нескольких планов где показывалась атмосфера Парижа XIX века. 
+        br
+        br
+        |Первый план это общий вид крыш Парижа и движение камеры которая заканчивалась на виде окна, где мы видим молодого Жюль Верна пишущего за своим столом.
+      .about__team
+        .team
+
+          img.team__img(src='./img/team1.jpg')
+          .team__txt
+            p.team__name Evgeny Kalinin
+            p.team__position director
+        .team
+
+          img.team__img(src='./img/team2.jpg')
+          .team__txt
+            p.team__name Courtney Love
+            p.team__position singer
+        .team
+
+          img.team__img(src='./img/team3.jpg')
+          .team__txt
+            p.team__name Gautama Buddha
+            p.team__position Sage
+    
+
+    include ./includes/_footer.jade

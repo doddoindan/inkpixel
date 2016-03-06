@@ -1,0 +1,204 @@
+doctype html
+html
+  include ./includes/_head.jade
+  body
+    include ./includes/_svg-sprite.jade
+    include ./includes/_mixins.jade
+    
+    include ./includes/_header.jade
+    
+    //- reel
+    .video-wrapper
+      iframe(src="https://player.vimeo.com/video/51809668" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+      
+    //- slider
+    //- .main-page--slider
+    //-   a(href='#')
+    //-     img(src='img/carousel1.jpg')
+    
+    //- Top projects
+    section.top-projects
+      p.top-projects--heading Top 5 projects
+      
+      .top-projects--slider
+        a.top-projects--slider-item(href='#')
+          img(src='img/carousel2.jpg')
+        ul.slider-dots
+          li
+            button
+          li
+            button
+          li.slide-active
+            button
+          li
+            button
+      
+      .top-projects--items      
+        .top-projects--item
+          a(href='#')
+            figure
+              img(src='img/top-pr1.jpg')
+              figcaption
+                svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                  path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                .item--caption
+                  object
+                    a(href='#')
+                      +icon('share_y')
+                  object
+                    a(href='#')
+                      +icon('play_y')
+                  object
+                    a(href='#')  
+                      p.caption--title Project name
+                      p.caption--subtitle Project short description
+        
+        .top-projects--item
+          a(href='#')
+            figure
+              img(src='img/top-pr2.jpg')
+              figcaption
+                svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                  path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                .item--caption
+                  object
+                    a(href='#')
+                      +icon('share_y')
+                  object
+                    a(href='#')
+                      +icon('play_y')
+                  object
+                    a(href='#')  
+                      p.caption--title Project name
+                      p.caption--subtitle Project short description
+          
+        .top-projects--item
+          a(href='#')
+            figure
+              img(src='img/top-pr3.jpg')
+              figcaption
+                svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                  path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                .item--caption
+                  object
+                    a(href='#')
+                      +icon('share_y')
+                  object
+                    a(href='#')
+                      +icon('play_y')
+                  object
+                    a(href='#')  
+                      p.caption--title Project name
+                      p.caption--subtitle Project short description
+          
+        .top-projects--item
+          a(href='#')
+            figure
+              img(src='img/top-pr4.jpg')
+              figcaption
+                svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                  path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                .item--caption
+                  object
+                    a(href='#')
+                      +icon('share_y')
+                  object
+                    a(href='#')
+                      +icon('play_y')
+                  object
+                    a(href='#')  
+                      p.caption--title Project name
+                      p.caption--subtitle Project short description
+
+        .top-projects--item
+          a(href='#')
+            figure
+              img(src='img/top-pr5.jpg')
+              figcaption
+                svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                  path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                .item--caption
+                  object
+                    a(href='#')
+                      +icon('share_y')
+                  object
+                    a(href='#')
+                      +icon('play_y')
+                  object
+                    a(href='#')  
+                      p.caption--title Project name
+                      p.caption--subtitle Project short description
+    
+    //- Latest Works
+    section.latest-works
+      p.latest-works--heading Latest Works
+      
+      .latest-works--items
+        .latest-works--item
+          a(href='#')
+            figure
+              img(src='img/latest-w1.jpg')
+              
+              figcaption
+                svg.angle-l(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.23 382.23")
+                  path(d="M4003.4,7471.82h382.23L4003.4,7854.05V7471.82Z" transform="translate(-4003.4 -7471.82)", style="fill: #212221")
+                svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                  path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                .latest-works--caption
+                  object
+                    a(href='#')
+                      +icon('share_y')
+                  object
+                    a(href='#')
+                      +icon('play_y')
+
+                  p.caption--title Project name
+                  p.caption--subtitle Project short description    
+                     
+        .latest-works--item
+          a(href='#')
+            figure
+              img(src='img/latest-w2.jpg')
+              
+              figcaption
+                svg.angle-l(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.23 382.23")
+                  path(d="M4003.4,7471.82h382.23L4003.4,7854.05V7471.82Z" transform="translate(-4003.4 -7471.82)", style="fill: #212221")
+                svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                  path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                .latest-works--caption
+                  object
+                    a(href='#')
+                      +icon('share_y')
+                  object
+                    a(href='#')
+                      +icon('play_y')
+
+                  p.caption--title Project name
+                  p.caption--subtitle Project short description    
+
+        .latest-works--item
+          a(href='#')
+            figure
+              img(src='img/latest-w3.jpg')
+              
+              figcaption
+                svg.angle-l(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.23 382.23")
+                  path(d="M4003.4,7471.82h382.23L4003.4,7854.05V7471.82Z" transform="translate(-4003.4 -7471.82)", style="fill: #212221")
+                svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                  path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                .latest-works--caption
+                  object
+                    a(href='#')
+                      +icon('share_y')
+                  object
+                    a(href='#')
+                      +icon('play_y')
+
+                  p.caption--title Project name
+                  p.caption--subtitle Project short description    
+      
+      .see-more
+        a(href='#') see more projects >>>
+        
+    include ./includes/_footer.jade
+    

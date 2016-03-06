@@ -1,0 +1,23 @@
+header.header
+  .header-wrapper
+    ul.lang 
+      li.lang--item.lang--item--active(data-lang="en") ENG
+      li.lang--item(data-lang="ru") РУС
+
+    form.searchbox
+      input.searchbox--input(type="search" placeholder="search" name="search")
+      input.searchbox--submit(type="submit" value="")
+      +icon('search')
+
+  a(href='index.html')
+    img.header--logo(src='img/inkpixel_logo.svg')
+
+  ul.header--menu
+    li.header--menu-item
+      a(href='portfolio.html') Portfolio
+    li.header--menu-item
+      a(href='about.html') About Us
+    li.header--menu-item
+      a(href='contact.html') Contact
+    
+  

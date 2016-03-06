@@ -1,0 +1,130 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  font-size: .4rem
+  letter-spacing: 2px
+  text-align: center
+  text-transform: uppercase
+  padding: 1rem 0 0
+  transition: max-height .5s
+  background-color: $black
+  z-index: 1
+  max-height: 140px
+  @media (min-width: 600px)
+    padding: 1rem 0
+
+  &--logo
+    width: 32%
+    min-width: 150px
+    transition: transform .5s
+    backface-visibility: hidden
+
+  &--menu
+    margin: 1.1rem auto
+    padding-left: 0
+    transition: opacity .5s
+    opacity: 1
+
+    &-item
+      display: inline
+      padding: 0 .6rem 0
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    transition: opacity .5s
+    opacity: 1
+
+.header_small
+  max-height: 50px
+  padding: .5rem 0
+  .header-wrapper,
+  .header--menu
+    opacity: 0
+  .header--logo
+    transform: translateY(-70%)
+
+.lang
+  padding-left: 1.6rem
+  margin: 0
+  display: inline-flex
+  color: #D1D1D1
+  text-transform: uppercase
+  width: 1.3rem
+  box-sizing: content-box
+  overflow: hidden
+  cursor: pointer
+  transition: width .3s
+
+.lang--item
+  text-align: center
+  display: inline-flex
+  flex: 1
+  display: flex
+  flex-direction: row
+  justify-content: center
+  order: 2
+  min-width: 1.3rem
+
+  &:hover
+    cursor: pointer
+
+.lang.open
+  width: 3.1rem
+
+.lang .lang--item--active
+  padding-right: .5rem
+  box-sizing: content-box
+  order: 1
+  color: $yellow
+  pointer-events: none
+
+.searchbox
+  position: relative
+  margin-right: 1.6rem
+  margin-top: -4px
+  overflow: hidden
+  height: 1.2rem
+  min-width: .7rem
+  width: 0
+  transition: width 0.3s
+
+  &--input
+    height: .7rem
+    margin: 0 1.5rem 0 0
+    background: $black
+    border: 1px $yellow solid
+    outline: none
+    padding: 2px 10px
+    -webkit-appearance: none
+    -webkit-border-radius: 0px
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 10
+
+  &--submit, .search
+    width: .7rem
+    height: .7rem
+    cursor: pointer
+    position: absolute
+    display: block
+    right: 0
+    top: 3px
+    padding: 0
+    margin: 0
+
+  &--submit
+    background-color: transparent
+    color: transparent
+    border: none
+    outline: none
+    z-index: -1
+
+  &--open
+    width: 100%
+
+  .search
+    z-index: 90

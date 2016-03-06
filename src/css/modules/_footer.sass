@@ -1,0 +1,50 @@
+.footer
+  padding: 1rem 1rem
+  color: $black
+  font-size: .4rem
+  letter-spacing: 2px
+  background: $yellow
+  text-transform: uppercase
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+  &--menu
+    // padding-top: 1.875rem
+    padding-left: .5rem
+    list-style: none
+
+
+    &-item:not(:last-child)
+      padding-bottom: .5rem
+
+  &--icons
+    // padding-right: .5rem
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    // width: 22.5%
+    text-align: right
+
+
+    &-item
+      margin: .6rem
+      display: block
+      // width: 28%
+      box-sizing: content-box
+      // @media (max-width: 341px)
+      //   margin: .6rem
+
+    .icon
+      width: 1.2rem
+      height: 1.2rem
+
+// @media (min-width: 768px)
+//   .footer--icons
+//     flex-wrap: nowrap
+
+    // &-item
+    //   margin: .8rem

@@ -1,0 +1,54 @@
+.portfolio
+  width: 100%
+  padding: 0 1.6rem
+  text-transform: uppercase
+
+  &--title
+    @extend .project--title
+    color: #fff
+
+  &--items
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    // padding-bottom: 3.65rem
+
+
+  &--item
+    width: 100%
+    text-align: right
+    margin-bottom: .8rem
+
+    @media (min-width: 600px)
+      width: 50%
+
+      &:nth-child(odd)
+        padding-right: .8rem
+
+      &:nth-child(even)
+        padding-left: .8rem
+
+    img
+      width: 100%
+    figure
+      margin: 0
+
+.item--title
+  // font-size: .8rem
+  @extend .caption--title
+
+.item--subtitle
+  // font-size: .6rem
+  @extend .caption--subtitle
+
+.btn-wrapper
+  text-align: center
+
+
+.view-more
+  text-transform: uppercase
+  font-size: .5rem
+  padding: .4rem .8rem
+  margin: 3.2rem 1.6rem
+  border: 1px solid $yellow
+  display: inline-block

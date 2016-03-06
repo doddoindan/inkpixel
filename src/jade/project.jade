@@ -1,0 +1,126 @@
+doctype html
+html
+  include ./includes/_head.jade
+  body
+    include ./includes/_svg-sprite.jade
+    include ./includes/_mixins.jade
+
+    include ./includes/_header.jade
+    
+    .backhome--long
+      a(href='#') <<< BACK TO HOME
+      
+    .backhome--short
+      a(href='#') <<<
+      
+    .project
+      p.project--title Paris
+      
+      .video-wrapper
+        iframe(src="https://player.vimeo.com/video/51809668" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+      .project--wrapper
+        .project--description
+          p Работа выполнялась для студии Signal Red и заключалась в создании нескольких планов где показывалась атмосфера Парижа XIX века. Первый план это общий вид крыш Парижа и движение камеры которая заканчивалась на виде окна, где мы видим молодого Жюль Верна пишущего за своим столом.
+        
+        .project--meta
+          strong.meta--name ART DIRECTOR
+          p.meta--data Kurt Cobain
+
+          strong.meta--name DESIGNER
+          p.meta--data Courtney Love
+
+          strong.meta--name BASS
+          p.meta--data Krist Novoselic
+
+          strong.meta--name TAGS
+          ul.meta--tags-list
+            li.meta--tag
+              a.tag--link(href='#') #MOTION
+            li.meta--tag
+              a.tag--link(href='#') #CITY
+            li.meta--tag
+              a.tag--link(href='#') #PARIS
+        
+        .project--icons
+          a(href='#')
+            +icon('share_y')
+          a(href='#')
+            +icon('facebook_y')
+          a(href='#')
+            +icon('vimeo_y')
+          a(href='#')
+            +icon('behance_y')
+
+
+      section.similar-projects
+        p.similar-projects--heading you may also like
+
+        .similar-projects--items
+          .similar-projects--item
+            a(href='#')
+              figure
+                img(src='img/similar-project1.jpg')
+
+                figcaption
+                  svg.angle-l(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.23 382.23")
+                    path(d="M4003.4,7471.82h382.23L4003.4,7854.05V7471.82Z" transform="translate(-4003.4 -7471.82)", style="fill: #212221")
+                  svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                    path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                  .similar-projects--caption
+                    object
+                      a(href='#')
+                        +icon('share_y')
+                    object
+                      a(href='#')
+                        +icon('play_y')
+
+                    p.caption--title Project name
+                    p.caption--subtitle Project short description
+
+          .similar-projects--item
+            a(href='#')
+              figure
+                img(src='img/similar-project2.jpg')
+
+                figcaption
+                  svg.angle-l(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.23 382.23")
+                    path(d="M4003.4,7471.82h382.23L4003.4,7854.05V7471.82Z" transform="translate(-4003.4 -7471.82)", style="fill: #212221")
+                  svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                    path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                  .similar-projects--caption
+                    object
+                      a(href='#')
+                        +icon('share_y')
+                    object
+                      a(href='#')
+                        +icon('play_y')
+
+                    p.caption--title Project name
+                    p.caption--subtitle Project short description
+
+          .similar-projects--item
+            a(href='#')
+              figure
+                img(src='img/similar-project3.jpg')
+
+                figcaption
+                  svg.angle-l(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.23 382.23")
+                    path(d="M4003.4,7471.82h382.23L4003.4,7854.05V7471.82Z" transform="translate(-4003.4 -7471.82)", style="fill: #212221")
+                  svg.angle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 382.23 382.23')
+                    path(d='M5491.49,6934.05H5109.26l382.23-382.23v382.23Z', transform='translate(-5109.26 -6551.82)', style='fill: #212221')
+                  .similar-projects--caption
+                    object
+                      a(href='#')
+                        +icon('share_y')
+                    object
+                      a(href='#')
+                        +icon('play_y')
+
+                    p.caption--title Project name
+                    p.caption--subtitle Project short description
+
+    .see-more
+      a(href='#') see more projects >>>
+
+    include ./includes/_footer.jade

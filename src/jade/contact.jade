@@ -1,0 +1,29 @@
+doctype html
+html
+  include ./includes/_head.jade
+  script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBJb8N6oHGD2a25sDDV0EcFY2FWKJmKcAs&sensor=false')
+  script(type='text/javascript', src='../js/googlemap.js')
+  body
+    include ./includes/_svg-sprite.jade
+    include ./includes/_mixins.jade
+
+    include ./includes/_header.jade
+      
+    section.contact
+      p.contact__title Contact 
+      p.contact__info 
+        | +380 (99) 546 98 76
+        br
+        | +380 (67) 675 44 33
+      p.contact__info 
+        | Ukraine-Kiev-03037
+        br
+        | Chervonozoryanyi Avenue 4G, of 199
+      p.contact__info 
+        a(href='mailto:box@b4team.com.ua') box@b4team.com.ua
+      
+      //- .map-wrapper
+      //-   iframe(width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=%D0%A7%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%BE%D0%B7%D0%BE%D1%80%D1%8F%D0%BD%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%20%D0%9A%D0%B8%D0%B5%D0%B2%2C%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%9A%D0%B8%D0%B5%D0%B2%2C%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0%204%D0%B3&key=AIzaSyBJb8N6oHGD2a25sDDV0EcFY2FWKJmKcAs" allowfullscreen)
+      #map
+      
+    include ./includes/_footer.jade
