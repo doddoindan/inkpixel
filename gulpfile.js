@@ -16,7 +16,8 @@ var gulp = require('gulp'),
     cheerio = require('gulp-cheerio'),
     replace = require('gulp-replace'),
     path = require('path'),
-    gulputil = require('gulp-util');
+    gulputil = require('gulp-util'),
+    ghPages = require('gulp-gh-pages');
 
 // scripts
 gulp.task('scripts', function(){
@@ -75,6 +76,15 @@ gulp.task('browsersync', function() {
         }
     });
 });
+
+// deploy
+gulp.task('deploy', function() {
+  return gulp.src('./dest/**/*')
+    .pipe(ghPages({
+      "remoteUrl" : "https://github.com/sergekovbasyuk/inkpixel.git"
+    }));
+});
+
 
 // watch
 gulp.task('watch', function () {
